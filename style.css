@@ -31,7 +31,7 @@ html, body{
 
 #firstview p{
     text-align: left;
-    color: #000000;
+    color: #3D3B39;
     font-size: 20px;
     line-height: 50px;
     letter-spacing: 10px;
@@ -180,16 +180,46 @@ html, body{
     background-image: url(images/background.jpg);
     background-size: cover;
     text-align: center;
+    height: 667px;
 }
 
 .endimage{
-    width: 80%;
+    width: 81%;
 }
 
 .end_tips{
     text-align: left;
+    background-color: #E5E3DC;
+    display: inline-block;
+    padding: 40px;
+    border: solid  4px #3D3B39;
+    border-radius: 30px;
+    position: relative;
+    top: -250px;
+    left: -200px;
 }
 
 .end_tips p{
-    
+    color: #3D3B39;
+    font-size: 20px;
+    line-height: 13px;
+    letter-spacing: 2px;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 600; 
+}
+
+footer{
+    background-color: #38B9C6;
+    text-align: center;
+}
+
+footer p{
+    color: #ffffff;
+    font-family: nimbus-sans, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding: 8px;
 }
