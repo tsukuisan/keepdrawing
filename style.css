@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+}
+
+/*トップページ*/
+
+#firstview{
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    text-align: center;    
+
+}
+
+.topimage{
+    width: 80%;
+}
+
+.dash{
+    width: 5%;
+    position: absolute;
+    top: 63%;
+    left: 17%;
+}
+
+#firstview p{
+    text-align: left;
+    color: #000000;
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 10px;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    position: absolute;
+    top: 60%;
+    left: 23%;
+    
+}
