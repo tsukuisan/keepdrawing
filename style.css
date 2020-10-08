@@ -43,3 +43,153 @@ html, body{
     left: 23%;
     
 }
+
+/*絵の歴史*/
+
+#history{
+    background-image: url(images/background_gradation.jpg);
+    background-size: cover;
+    height: 4000px;
+}
+
+.sho_1{
+    width: 40%;
+    position: relative;
+    top: -80px;
+    left: 650px; 
+}
+
+.sho_2{
+    width: 30%;
+    position: relative;
+    top: 500px;
+    left: -300px;
+}
+
+.sho_3{
+    width: 10%;
+    position: relative;
+    top: 200px;
+    left: -80px;
+}
+
+.sho_arrow{
+    width: 20%;
+    position: relative;
+    top: -40px;
+    left: 570px;
+}
+
+.chu_1{
+    width: 20%;
+    position: relative;
+    top: 200px;
+    left: 520px;
+}
+
+.chu_2{
+    width: 27%;
+    position: relative;
+    top: 530px;
+    left: -320px;   
+}
+
+.chu_arrow{
+    width: 10%;
+    position: relative;
+    top: 1050px;
+    left: -300px;
+}
+
+.ko_1{
+    width: 30%;
+    position: relative;
+    top: 600px;
+    left: 200px;
+}
+
+.ko_2{
+    width: 30%;
+    position: relative;
+    top: 1070px;
+    left: 270px;
+}
+
+.ko_3{
+    width: 15%;
+    position: relative;
+    top: 1000px;
+    left: -600px;   
+}
+
+.ko_arrow{
+    width: 10%;
+    position: relative;
+    top: 1450px;
+    left: -550px;  
+}
+
+.dai_1{
+    width: 10%;
+    position: relative;
+    top: 1300px;
+    left: -550px;
+}
+
+.dai_2{
+    width: 25%;
+    position: relative;
+    top: 1050px;
+    left: 800px;
+}
+
+.dai_3{
+    width: 30%;
+    position: relative;
+    top: 1200px;
+    left: -150px;
+}
+
+.dai_4{
+    width: 30%;
+    position: relative;
+    top: 1500px;
+    left: -100px;
+}
+
+/*スライダー*/
+
+#slider{
+    background-color: #ED694A;
+}
+
+#slider p{
+    text-align: center;
+    color: #FCFC17;
+    font-family: vdl-logojrblack, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 10px;
+    padding: 50px;
+}
+
+/*エンディング*/
+
+#ending{
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.endimage{
+    width: 80%;
+}
+
+.end_tips{
+    text-align: left;
+}
+
+.end_tips p{
+    
+}
