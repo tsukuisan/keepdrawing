@@ -1,62 +1,202 @@
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <title>絵は絶っ対に、上手くなるッ！</title>
+
     <link rel="stylesheet" href="style.css">
     <script>
-  (function(d) {
-    var config = {
-      kitId: 'ivn7wlb',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
+        (function(d) {
+            var config = {
+                    kitId: 'ivn7wlb',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-   <section id="firstview">
-    <img class="topimage" src="images/topimage.png" alt="">
-    <img class="dash" src="images/dash.png" alt="">
-    <p>
-        <span style="background-color: #E5E3DC; padding: 5px;">これは、</span><br>
-        <span style="background-color: #e5e3dc; padding: 5px;">絵が上手く描けないことに</span><br>
-        <span style="background-color: #e5e3dc; padding: 5px;">悩む君に送る、</span><br>
-        <span style="background-color: #e5e3dc; padding: 5px;">ある女の描いた</span><br>
-        <span style="background-color: #e5e3dc; padding: 5px;">絵の記録である。</span><br>
-    </p>
+    <section id="firstview">
+        <img class="topimage" src="images/topimage.png" alt="">
+        <img class="dash" src="images/dash.png" alt="">
+        <p>
+            <span style="background-color: #E5E3DC; padding: 5px;">これは、</span><br>
+            <span style="background-color: #e5e3dc; padding: 5px;">絵が上手く描けないことに</span><br>
+            <span style="background-color: #e5e3dc; padding: 5px;">悩む君に送る、</span><br>
+            <span style="background-color: #e5e3dc; padding: 5px;">ある女の描いた</span><br>
+            <span style="background-color: #e5e3dc; padding: 5px;">絵の記録である。</span><br>
+        </p>
     </section>
-    
+
     <section id="history">
-    <img class="sho_title" src="images/sho_title.png" alt="">
-    <p class="sho_copy">少女漫画『ちゃお』で<br>生きていた時代</p>
-    <img class="sho_1" src="images/sho_1.png" alt="">
-    <img class="sho_2" src="images/sho_2.png" alt="">
-    <img class="sho_3" src="images/sho_3.png" alt="">
-    <img class="sho_arrow" src="images/sho_arrow.png" alt="">
-    <img class="chu_1" src="images/chu_1.png" alt="">
-    <img class="chu_2" src="images/chu_2.png" alt="">
-    <img class="chu_title" src="images/chu_title.png" alt="">
-    <p class="chu_copy">ボカロ、アニメ、マンガ<br>ありとあらゆるサブカルで<br>陰キャを極めた時代</p>
-    <img class="chu_arrow" src="images/chu_arrow.png" alt="">
-    <img class="ko_1" src="images/ko_1.png" alt="">
-    <img class="ko_2" src="images/ko_2.png" alt="">
-    <img class="ko_3" src="images/ko_3.png" alt="">
-    <img class="ko_arrow" src="images/ko_arrow.png" alt="">
-    <img class="dai_1" src="images/dai_1.png" alt="">
-    <img class="dai_2" src="images/dai_2.png" alt="">
-    <img class="dai_3" src="images/dai_3.png" alt="">
-    <img class="dai_4" src="images/dai_4.jpg" alt="">
-    <img class="dai_title" src="images/dai_title.png" alt="">
-    <p class="dai_copy">心身を病んだときに<br>癒してくれたのは絵だと<br>悟りを開いた時代</p>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <div id="popup">
+
+            <div class="upblock" id="popup_sho_1">
+                <p>文集の表紙</p>
+                <hr noshade color="#e5e3dc">
+                <p class="explanation">
+                    小学校の制服を着ている<br>
+                    オレンジの画用紙に<br>
+                    色鉛筆で描いてる
+                </p>
+            </div>
+
+            <div class="upblock_orange" id="popup_sho_2">
+                <p>鏡音リン</p>
+                <hr noshade color="#e5e3dc">
+                <p class="explanation">
+                    ボカロにハマりたて<br>
+                    コピー用紙に色鉛筆<br>
+                    ちゃおみたいな絵柄をやめる
+                </p>
+            </div>
+
+            <div class="upblock" id="popup_chu_1">
+                <p>あずにゃん</p>
+                <hr noshade color="#e5e3dc">
+                <p class="explanation">
+                    ペンタブをゲット！<br>
+                    フリーソフトAzPainter2を愛用<br>
+                    ひたすら塗りを研究
+                </p>
+            </div>
+
+            <div class="upblock_orange" id="popup_chu_2">
+                <p>マギ</p>
+                <hr noshade color="#e5e3dc">
+                <p class="explanation">
+                    中3、勉強より落書き<br>
+                    マギの絵柄が超好き<br>
+                    青の塗りが大好き
+                </p>
+            </div>
+
+            <div class="upblock" id="popup_ko_1">
+                <p>セーラー服</p>
+                <hr noshade color="#e5e3dc">
+                <p class="explanation">
+                    高2の夏<br>
+                    未だにAzPainter2<br>
+                    厚塗りを始める
+                </p>
+            </div>
+            
+            <div class="upblock_orange" id="popup_ko_2">
+                <p>オリジナル</p>
+                <hr noshade color="#e5e3dc">
+                <p class="explanation">
+                    受験前の最後の絵<br>
+                    キャラデザも背景も頑張った！<br>
+                    素敵だと思ったものの詰め込み
+                </p>
+            </div>
+            
+            <div class="upblock" id="popup_dai_2">
+                <p>残留思念体</p>
+                <hr noshade color="#e5e3dc">
+                <p class="explanation">
+                    大学生、絵を描く元気を失う<br>
+                    授業中に描くダイイングメッセージ<br>
+                    溶けるような絵が多い
+                </p>
+            </div>
+            
+            <div class="upblock_orange" id="popup_dai_3">
+                <p>うさぎ</p>
+                <hr noshade color="#e5e3dc">
+                <p class="explanation">ネネちゃんのうさぎ怖くない？</p>
+            </div>
+            
+            <div class="upblock" id="popup_dai_4">
+                <p>金星</p>
+                <hr noshade color="#e5e3dc">
+                <p class="explanation">
+                    金星 / 女王蜂 feat.DAOKO<br>
+                    良い曲<br>
+                </p>
+            </div>
+        </div>
+
+        <!--        小学校時代-->
+
+        <img class="sho_title" src="images/sho_title.png" alt="">
+        <p class="sho_copy">少女漫画『ちゃお』で<br>生きていた時代</p>
+        <img id="image" class="sho_1" src="images/sho_1.png" alt="">
+        <img id="image" class="sho_2" src="images/sho_2.png" alt="">
+        <img class="sho_3" src="images/sho_3.png" alt="">
+        <img class="sho_arrow" src="images/sho_arrow.png" alt="">
+
+        <!--        中学時代-->
+
+        <img id="image" class="chu_1" src="images/chu_1.png" alt="">
+        <img id="image" class="chu_2" src="images/chu_2.png" alt="">
+        <img class="chu_title" src="images/chu_title.png" alt="">
+        <p class="chu_copy">ボカロ、アニメ、マンガ<br>ありとあらゆるサブカルで<br>陰キャを極めた時代</p>
+        <img class="chu_arrow" src="images/chu_arrow.png" alt="">
+
+        <!--        高校時代-->
+
+        <img id="image" class="ko_1" src="images/ko_1.png" alt="">
+        <img id="image" class="ko_2" src="images/ko_2.png" alt="">
+        <img class="ko_3" src="images/ko_3.png" alt="">
+        <img class="ko_arrow" src="images/ko_arrow.png" alt="">
+
+        <!--        大学時代-->
+
+        <img class="dai_1" src="images/dai_1.png" alt="">
+        <img id="image" class="dai_2" src="images/dai_2.png" alt="">
+        <img id="image" class="dai_3" src="images/dai_3.png" alt="">
+        <img id="image" class="dai_4" src="images/dai_4.jpg" alt="">
+        <img class="dai_title" src="images/dai_title.png" alt="">
+        <p class="dai_copy">心身を病んだときに<br>癒してくれたのは絵だと<br>悟りを開いた時代</p>
+        <script src="js/popup.js"></script>
+
     </section>
-    
+
     <section id="slider">
         <p>絵の修行は続く…</p>
+        <ul class="slider">
+            <li><img src="images/slide_01.jpg" alt="image01"></li>
+            <li><img src="images/slide_02.jpg" alt="image02"></li>
+            <li><img src="images/slide_03.jpg" alt="image03"></li>
+            <li><img src="images/slide_04.jpg" alt="image04"></li>
+            <li><img src="images/slide_05.jpg" alt="image05"></li>
+            <li><img src="images/slide_06.jpg" alt="image06"></li>
+            <li><img src="images/slide_07.jpg" alt="image07"></li>
+        </ul>
+        <link href="js/slick/slick-theme.css" rel="stylesheet" type="text/css">
+        <link href="js/slick/slick.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="js/slick/slick.min.js">
+        </script>
+        <script type="text/javascript" src="js/slick/slick.js"></script>
     </section>
-    
+
     <section id="ending">
         <img class="endimage" src="images/endimage.png" alt="">
         <div class="end_tips">
@@ -65,9 +205,10 @@
             <p>● 一回やめて描きたくなったら描こう</p>
         </div>
     </section>
-    
+
     <footer>
         <p>&copy;Chika Tsukui</p>
     </footer>
 </body>
+
 </html>

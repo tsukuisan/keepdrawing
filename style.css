@@ -12,7 +12,7 @@ html, body{
 /*トップページ*/
 
 #firstview{
-    background-image: url("images/background.jpg");
+    background-image: url("images/background.svg");
     background-size: cover;
     text-align: center;    
 
@@ -47,10 +47,64 @@ html, body{
 /*絵の歴史*/
 
 #history{
-    background-image: url(images/background_gradation.jpg);
+    background-image: url(images/background_gradation.svg);
     background-size: cover;
     height: 4200px;
 }
+
+/*ポップアップ*/
+
+#popup{
+    position: absolute;
+    z-index: 50;    
+}
+
+#popup {
+    padding: 0 4px;
+}
+
+#popup .upblock{
+    text-align: center;
+    display: none;
+    color: #e5e3dc;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    background: rgba(56,185,198,.75);
+    border: 2px solid #e5e3dc;
+    padding: 20px  50px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#popup .upblock_orange{
+    text-align: center;
+    display: none;
+    color: #e5e3dc;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    background: rgba(237,105,74,.75);
+    border: 2px solid #e5e3dc;
+    padding: 20px  50px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;   
+}
+
+#popup p{
+    padding: 5px;
+}
+
+#popup .explanation{
+    font-size: 16px;
+}
+
+
+/*絵*/
 
 .sho_title{
     width: 20%;
@@ -222,10 +276,10 @@ html, body{
 
 #slider{
     background-color: #ED694A;
+    text-align: center;
 }
 
 #slider p{
-    text-align: center;
     color: #FCFC17;
     font-family: vdl-logojrblack, sans-serif;
     font-style: normal;
@@ -235,10 +289,25 @@ html, body{
     padding: 50px;
 }
 
+.slider{
+    margin: 0px auto;
+    width: 80%;
+    height: auto;
+}
+.slider img{
+    width: 95%;
+}
+
+slick setting
+.slick-prev:before,
+.slick-next:before {
+    color: #ed694a;
+}
+
 /*エンディング*/
 
 #ending{
-    background-image: url(images/background.jpg);
+    background-image: url(images/background.svg);
     background-size: cover;
     text-align: center;
     height: 668px;
