@@ -93,7 +93,7 @@ html, body{
 .scrollanime2 {opacity: 0;} /*一瞬表示されるのを防ぐ*/
 .fadeInDown {
     animation-name: fadeInDown;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 @keyframes fadeInDown {
