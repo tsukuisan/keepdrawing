@@ -14,8 +14,19 @@ html, body{
 #firstview{
     background-image: url("images/background.svg");
     background-size: cover;
+    background-attachment: fixed;
     text-align: center;    
+}
 
+.frame{
+    width: 98%;
+    height: 95%;
+    padding-top: 10px;
+    position: fixed;
+    top: 0px;
+    left: 13px;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 .topimage{
@@ -40,8 +51,30 @@ html, body{
     font-weight: 600;
     position: absolute;
     top: 60%;
-    left: 23%;
-    
+    left: 23%;    
+}
+
+.button{
+    width: 5%;
+    position: absolute;
+    top: 83%;
+    left: 50%;    
+}
+
+.button:hover{
+    display: none;
+}
+
+.button_hover{
+    width: 5%;
+    position: absolute;
+    top: 83%;
+    left: 50%;    
+/*    display: none;*/
+}
+
+.button_hover:hover{
+    display: block;
 }
 
 /*絵の歴史*/
@@ -49,8 +82,39 @@ html, body{
 #history{
     background-image: url(images/background_gradation.svg);
     background-size: cover;
+    background-attachment: fixed;
     height: 4200px;
 }
+
+/*フェードイン*/
+
+.scrollanime {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.scrollanime1 {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.scrollanime2 {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;         
+    }
+    100% {
+    opacity: 1;
+    transform: translate(0);
+    }
+}
+
+/*2.上下の動きを指定*/
+.updown {transform: translateY(-100px);}
+.downup {transform: translateY(100px);}
+
+/*3.左右の動きを指定*/
+.sect02{overflow: hidden;} /*横スクロールバーを隠す*/
+.slide-right {transform: translateX(200px);}
+.slide-left {transform: translateX(-200px);}
+
 
 /*ポップアップ*/
 
