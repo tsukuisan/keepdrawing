@@ -5,8 +5,7 @@
     padding: 0;
 }
 
-html,
-body {
+html,body {
     width: 100%;
 }
 
@@ -443,6 +442,7 @@ span{
 #slider {
     background-color: #ED694A;
     text-align: center;
+    height: 750px;
 }
 
 #slider p {

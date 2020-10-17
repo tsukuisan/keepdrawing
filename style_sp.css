@@ -420,6 +420,7 @@ span{
 #slider {
     background-color: #ED694A;
     text-align: center;
+    height: 840px;
 }
 
 #slider p {
@@ -434,7 +435,8 @@ span{
 
 .slider {
     margin: 0px auto;
-    width: 80%;
+    margin-top: 10px;
+    width: 90%;
     height: auto;
 }
 

@@ -76,7 +76,8 @@
                             "display":"inline-block",
                             "position": "absolute",
                             "left": mouse_x,
-                            "top": mouse_y
+                            "top": mouse_y,
+                            "overflow":"hidden",
                         });
                     }
 
