@@ -1,21 +1,36 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html, body{
+html,
+body {
     width: 100%;
 }
 
 /*トップページ*/
 
-#firstview{
+#firstview {
     background-image: url("images/background.svg");
     background-size: cover;
     background-attachment: fixed;
-    text-align: center;    
+    text-align: center;
+    z-index: -1;                
+}
+
+#yellowbox{
+    width: 97%;
+    height: 94%;
+    position: fixed;
+    top: 10px;
+    left: 13px;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0);
+    border: solid 8px yellow;
+    border-radius: 50px;
 }
 
 .frame{
@@ -27,20 +42,21 @@ html, body{
     left: 13px;
     display: inline-block;
     margin: 0 auto;
+/*    z-index: 100;*/
 }
 
-.topimage{
+.topimage {
     width: 80%;
 }
 
-.dash{
+.dash {
     width: 5%;
     position: absolute;
     top: 63.2%;
     left: 17%;
 }
 
-#firstview p{
+#firstview p {
     text-align: left;
     color: #3D3B39;
     font-size: 20px;
@@ -51,35 +67,35 @@ html, body{
     font-weight: 600;
     position: absolute;
     top: 60%;
-    left: 23%;    
+    left: 23%;
 }
 
-.button{
+.button {
     width: 5%;
     position: absolute;
     top: 83%;
-    left: 50%;    
+    left: 50%;
 }
 
-.button:hover{
+.button:hover {
     display: none;
 }
 
-.button_hover{
+.button_hover {
     width: 5%;
     position: absolute;
     top: 83%;
-    left: 50%;    
-/*    display: none;*/
+    left: 50%;
+   
 }
 
-.button_hover:hover{
+.button_hover:hover {
     display: block;
 }
 
 /*絵の歴史*/
 
-#history{
+#history {
     background-image: url(images/background_gradation.svg);
     background-size: cover;
     background-attachment: fixed;
@@ -88,46 +104,68 @@ html, body{
 
 /*フェードイン*/
 
-.scrollanime {opacity: 0;} /*一瞬表示されるのを防ぐ*/
-.scrollanime1 {opacity: 0;} /*一瞬表示されるのを防ぐ*/
-.scrollanime2 {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.scrollanime {
+    opacity: 0;
+}
+
+/*一瞬表示されるのを防ぐ*/
+.scrollanime1 {
+    opacity: 0;
+}
+
 .fadeInDown {
     animation-name: fadeInDown;
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
+
 @keyframes fadeInDown {
     0% {
-        opacity: 0;         
+        opacity: 0;
     }
+
     100% {
-    opacity: 1;
-    transform: translate(0);
+        opacity: 1;
+        transform: translate(0);
     }
 }
 
 /*2.上下の動きを指定*/
-.updown {transform: translateY(-100px);}
-.downup {transform: translateY(100px);}
+.updown {
+    transform: translateY(-100px);
+}
+
+.downup {
+    transform: translateY(100px);
+}
 
 /*3.左右の動きを指定*/
-.sect02{overflow: hidden;} /*横スクロールバーを隠す*/
-.slide-right {transform: translateX(200px);}
-.slide-left {transform: translateX(-200px);}
+.sect02 {
+    overflow: hidden;
+}
+
+/*横スクロールバーを隠す*/
+.slide-right {
+    transform: translateX(200px);
+}
+
+.slide-left {
+    transform: translateX(-200px);
+}
 
 
 /*ポップアップ*/
 
-#popup{
+#popup {
     position: absolute;
-    z-index: 50;    
+    z-index: 50;
 }
 
 #popup {
     padding: 0 4px;
 }
 
-#popup .upblock{
+#popup .upblock {
     text-align: center;
     display: none;
     color: #e5e3dc;
@@ -135,15 +173,15 @@ html, body{
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    background: rgba(56,185,198,.75);
+    background: rgba(56, 185, 198, .75);
     border: 2px solid #e5e3dc;
-    padding: 20px  50px;
+    padding: 20px 50px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
 
-#popup .upblock_orange{
+#popup .upblock_orange {
     text-align: center;
     display: none;
     color: #e5e3dc;
@@ -151,33 +189,33 @@ html, body{
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    background: rgba(237,105,74,.75);
+    background: rgba(237, 105, 74, .75);
     border: 2px solid #e5e3dc;
-    padding: 20px  50px;
+    padding: 20px 50px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    border-radius: 10px;   
+    border-radius: 10px;
 }
 
-#popup p{
+#popup p {
     padding: 5px;
 }
 
-#popup .explanation{
+#popup .explanation {
     font-size: 16px;
 }
 
 
 /*絵*/
 
-.sho_title{
+.sho_title {
     width: 20%;
     position: relative;
     top: -100px;
     left: 300px;
 }
 
-.sho_copy{
+.sho_copy {
     display: inline-block;
     color: #e5e3dc;
     font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
@@ -190,56 +228,60 @@ html, body{
     left: 30px;
 }
 
-.sho_1{
+.sho_1 {
     width: 40%;
     position: relative;
     top: 150px;
-    left: 200px; 
+    left: 200px;
+    cursor: pointer;
 }
 
-.sho_2{
+.sho_2 {
     width: 30%;
     position: relative;
     top: 0px;
     left: 280px;
+    cursor: pointer;
 }
 
-.sho_3{
+.sho_3 {
     width: 10%;
     position: relative;
     top: -320px;
     left: 510px;
 }
 
-.sho_arrow{
+.sho_arrow {
     width: 20%;
     position: relative;
     top: 200px;
     left: 0px;
 }
 
-.chu_1{
+.chu_1 {
     width: 20%;
     position: relative;
     top: 370px;
     left: 0px;
+    cursor: pointer;
 }
 
-.chu_2{
+.chu_2 {
     width: 27%;
     position: relative;
     top: 250px;
-    left: 280px;   
+    left: 280px;
+    cursor: pointer;
 }
 
-.chu_title{
+.chu_title {
     width: 20%;
     position: relative;
     top: 100px;
     left: 500px;
 }
 
-.chu_copy{
+.chu_copy {
     display: inline-block;
     color: #e5e3dc;
     font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
@@ -249,80 +291,85 @@ html, body{
     line-height: 40px;
     position: relative;
     top: 250px;
-    left: 230px;    
+    left: 230px;
 }
 
-.chu_arrow{
+.chu_arrow {
     width: 10%;
     position: relative;
     top: 730px;
     left: -300px;
 }
 
-.ko_1{
+.ko_1 {
     width: 30%;
     position: relative;
     top: 300px;
     left: 200px;
+    cursor: pointer;
 }
 
-.ko_2{
+.ko_2 {
     width: 30%;
     position: relative;
     top: 730px;
     left: 270px;
+    cursor: pointer;
 }
 
-.ko_3{
+.ko_3 {
     width: 15%;
     position: relative;
     top: 850px;
-    left: -600px;   
+    left: -600px;
 }
 
-.ko_arrow{
+.ko_arrow {
     width: 10%;
     position: relative;
     top: 1150px;
-    left: -550px;  
+    left: -550px;
 }
 
-.dai_1{
+.dai_1 {
     width: 10%;
     position: relative;
     top: 1000px;
     left: -550px;
 }
 
-.dai_2{
+.dai_2 {
     width: 25%;
     position: relative;
     top: 680px;
     left: 800px;
+    cursor: pointer;
 }
 
-.dai_3{
+.dai_3 {
     width: 30%;
     position: relative;
     top: 850px;
     left: -150px;
+    cursor: pointer;
 }
 
-.dai_4{
+.dai_4 {
     width: 35%;
     position: relative;
     top: 1200px;
     left: -100px;
+    cursor: pointer;
 }
 
-.dai_title{
+.dai_title {
     width: 20%;
     position: relative;
     top: 880px;
     left: 300px;
 }
 
-.dai_copy{
+.dai_copy {
     display: inline-block;
     color: #e5e3dc;
     font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
@@ -333,17 +380,17 @@ html, body{
     position: relative;
     top: 1000px;
     left: 40px;
-    
+
 }
 
 /*スライダー*/
 
-#slider{
+#slider {
     background-color: #ED694A;
     text-align: center;
 }
 
-#slider p{
+#slider p {
     color: #FCFC17;
     font-family: vdl-logojrblack, sans-serif;
     font-style: normal;
@@ -353,62 +400,62 @@ html, body{
     padding: 50px;
 }
 
-.slider{
+.slider {
     margin: 0px auto;
     width: 80%;
     height: auto;
 }
-.slider img{
+
+.slider img {
     width: 95%;
 }
 
-slick setting
-.slick-prev:before,
+slick setting .slick-prev:before,
 .slick-next:before {
     color: #ed694a;
 }
 
 /*エンディング*/
 
-#ending{
+#ending {
     background-image: url(images/background.svg);
     background-size: cover;
     text-align: center;
     height: 668px;
 }
 
-.endimage{
+.endimage {
     width: 81%;
 }
 
-.end_tips{
+.end_tips {
     text-align: left;
     background-color: #E5E3DC;
     display: inline-block;
     padding: 40px;
-    border: solid  4px #3D3B39;
+    border: solid 4px #3D3B39;
     border-radius: 30px;
     position: relative;
     top: -250px;
     left: -200px;
 }
 
-.end_tips p{
+.end_tips p {
     color: #3D3B39;
     font-size: 20px;
     line-height: 13px;
     letter-spacing: 2px;
     font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
     font-style: normal;
-    font-weight: 600; 
+    font-weight: 600;
 }
 
-footer{
+footer {
     background-color: #38B9C6;
     text-align: center;
 }
 
-footer p{
+footer p {
     color: #ffffff;
     font-family: nimbus-sans, sans-serif;
     font-style: normal;
