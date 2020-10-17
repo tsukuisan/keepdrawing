@@ -13,93 +13,71 @@ body {
 /*トップページ*/
 
 #firstview {
-    background-image: url("images/background.svg");
-    background-size: cover;
+    background-image: url("images/background_sp.svg");
+    background-size: contain;
     background-attachment: fixed;
     text-align: center;
-    z-index: -1;                
+    z-index: -1;
+    height: 109%;
 }
 
 .title_sp{
+    width: 30%;
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.topimage{
     display: none;
-}
-
-#yellowbox{
-    width: 97%;
-    height: 93%;
-    position: fixed;
-    top: 10px;
-    left: 13px;
-    display: inline-block;
-    margin: 0 auto;
-    background-color: rgba(255,255,255,0);
-    border: solid 8px yellow;
-    border-radius: 50px;
-}
-
-.frame{
-    width: 98%;
-    height: 95%;
-    padding-top: 10px;
-    position: fixed;
-    top: 0px;
-    left: 13px;
-    display: inline-block;
-    margin: 0 auto;
-/*    z-index: 100;*/
-}
-
-.topimage {
-    width: 80%;
 }
 
 .topimage_sp{
-    display: none;
+    width: 100%;
+    position: relative;
+    top: -50px;
 }
 
 .dash {
-    width: 5%;
+    width: 10%;
+    height: 0.5%;
     position: absolute;
-    top: 63.2%;
-    left: 17%;
+    top: 82.5%;
+    left: 5%;
 }
 
 #firstview p {
     text-align: left;
     color: #3D3B39;
-    font-size: 20px;
-    line-height: 50px;
-    letter-spacing: 10px;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 5px;
     font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
     font-style: normal;
     font-weight: 600;
     position: absolute;
-    top: 60%;
-    left: 23%;
+    top: 80%;
+    left: 18%;
 }
 
 span{
     background-color: #E5E3DC;
-    padding: 5px;
+    padding: 1px;
 }
 
 .link-button{
-    width: 72px;
-    height: 72px;
+    width: 60px;
+    height: 60px;
     background-color: rgba(255,255,255,0);
     position: absolute;
-    top: 83%;
-    left: 50%;
+    top: 107%;
+    left: 40%;
     animation: key1 .3s ease infinite alternate;    
 }
 
 @keyframes key1{
   0% {transform: translateY(0px);}
   100% {transform: translateY(-10px);}
-}
-
-.link-button:hover+.button{
-    display: none;
 }
 
 .button{
@@ -109,24 +87,12 @@ span{
     display: block;
 }
 
-.button_hover {
-    width: 100%;
-    position: absolute;
-    left: 0%;
-   
-}
-
-.button_hover:hover {
-    display: block;
-}
-
 /*絵の歴史*/
 
 #history {
     background-image: url(images/background_gradation.svg);
     background-size: cover;
-    background-attachment: fixed;
-    height: 4200px;
+    height: 5550px;
 }
 
 /*フェードイン*/
@@ -166,12 +132,12 @@ span{
     transform: translateY(100px);
 }
 
-/*横スクロールバーを隠す*/
+/*3.左右の動きを指定*/
 .sect02 {
     overflow: hidden;
 }
 
-/*3.左右の動きを指定*/
+/*横スクロールバーを隠す*/
 .slide-right {
     transform: translateX(200px);
 }
@@ -179,7 +145,6 @@ span{
 .slide-left {
     transform: translateX(-200px);
 }
-
 
 /*ポップアップ*/
 
@@ -229,21 +194,21 @@ span{
 }
 
 #popup .explanation {
-    font-size: 16px;
+    font-size: 5%;
 }
 
 
 /*絵*/
 
 .sho_title {
-    width: 20%;
-    position: relative;
-    top: -100px;
-    left: 300px;
+    display: none;
 }
 
 .sho_title_sp{
-    display: none;
+    margin-top: 100px;
+    position: relative;
+    top: 0%;
+    left: 65%;
 }
 
 .sho_copy {
@@ -255,69 +220,48 @@ span{
     font-size: 20px;
     line-height: 40px;
     position: relative;
-    top: -5px;
-    left: 30px;
+    top: -100px;
+    left: 10px;
+    writing-mode: vertical-rl;
 }
 
 .sho_1 {
-    width: 40%;
+    width: 85%;
     position: relative;
-    top: 150px;
-    left: 200px;
+    top: 50px;
+    left: 50px;
     cursor: pointer;
 }
 
 .sho_2 {
-    width: 30%;
+    width: 70%;
     position: relative;
-    top: 0px;
-    left: 280px;
+    top: 120px;
+    left: 50px;
     cursor: pointer;
 }
 
 .sho_3 {
-    width: 10%;
+    width: 40%;
     position: relative;
-    top: -320px;
-    left: 510px;
+    top: 100px;
+    left: 180px;
 }
 
 .sho_arrow {
-    width: 20%;
-    position: relative;
-    top: 200px;
-    left: 0px;
+    display: none;
 }
 
 .sho_arrow_sp{
-    display: none;
+    position: relative;
+    top: 180px;
+    left: -55px;    
 }
 
 .chu_title_sp{
-    display: none;
-}
-
-.chu_1 {
-    width: 20%;
     position: relative;
-    top: 370px;
-    left: 0px;
-    cursor: pointer;
-}
-
-.chu_2 {
-    width: 27%;
-    position: relative;
-    top: 250px;
-    left: 280px;
-    cursor: pointer;
-}
-
-.chu_title {
-    width: 20%;
-    position: relative;
-    top: 100px;
-    left: 500px;
+    top: 400px;
+    left: -100px;    
 }
 
 .chu_copy {
@@ -329,95 +273,107 @@ span{
     font-size: 20px;
     line-height: 40px;
     position: relative;
-    top: 250px;
-    left: 230px;
+    top: -570px;
+    left: 200px;
+    writing-mode: vertical-rl;    
+}
+
+.chu_1{
+    width: 60%;
+    position: relative;
+    top: 550px;
+    left: 60px;
+    cursor: pointer;    
+}
+
+.chu_2 {
+    width: 80%;
+    position: relative;
+    top: 620px;
+    left: 40px;
+    cursor: pointer;
+}
+
+.chu_title{
+    display: none;
 }
 
 .chu_arrow {
-    width: 10%;
-    position: relative;
-    top: 730px;
-    left: -300px;
-}
-
-.chu_arrow_sp{
     display: none;
 }
 
 .ko_1 {
-    width: 30%;
+    width: 60%;
     position: relative;
-    top: 300px;
-    left: 200px;
+    top: 820px;
+    left: -110px;
     cursor: pointer;
 }
 
 .ko_2 {
-    width: 30%;
+    width: 80%;
     position: relative;
-    top: 730px;
-    left: 270px;
+    top: 860px;
+    left: 40px;
     cursor: pointer;
 }
 
 .ko_3 {
-    width: 15%;
+    width: 45%;
     position: relative;
-    top: 850px;
-    left: -600px;
+    top: -140px;
+    left: 170px;
 }
 
 .ko_arrow {
-    width: 10%;
-    position: relative;
-    top: 1150px;
-    left: -550px;
+    display: none;
 }
 
-.ko_arrow_sp{
-    display: none;
+.chu_arrow_sp{
+    width: 9%;
+    position: relative;
+    top: 890px;
+    left: 80px;    
 }
 
 .dai_title_sp{
-    display: none;
+    position: relative;
+    top: 1200px;
+    left: 32px;
 }
 
-.dai_1 {
-    width: 10%;
+.dai_1{
+    width: 50%;
     position: relative;
-    top: 1000px;
-    left: -550px;
+    top: 600px;
+    left: 40px;
 }
 
 .dai_2 {
-    width: 25%;
+    width: 80%;
     position: relative;
-    top: 680px;
-    left: 800px;
+    top: 1130px;
+    left: 60px;
     cursor: pointer;
 }
-
 .dai_3 {
-    width: 30%;
+    width: 80%;
     position: relative;
-    top: 850px;
-    left: -150px;
+    top: 650px;
+    left: 10px;
     cursor: pointer;
 }
 
 .dai_4 {
-    width: 35%;
+    width: 80%;
     position: relative;
-    top: 1200px;
-    left: -100px;
+    top: 900px;
+    left: 35px;
     cursor: pointer;
 }
 
 .dai_title {
-    width: 20%;
-    position: relative;
-    top: 880px;
-    left: 300px;
+    display: none;
 }
 
 .dai_copy {
@@ -429,12 +385,15 @@ span{
     font-size: 20px;
     line-height: 40px;
     position: relative;
-    top: 1000px;
-    left: 40px;
+    top: -270px;
+    left: 60px;    
+    writing-mode: vertical-rl;    
 }
 
 .dai_arrow_sp{
-    display: none;
+    position: relative;
+    top: 1000px;
+    left: 50px;
 }
 
 /*スライダー*/
@@ -449,7 +408,7 @@ span{
     font-family: vdl-logojrblack, sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 20px;
     letter-spacing: 10px;
     padding: 50px;
 }
@@ -469,43 +428,47 @@ slick setting .slick-prev:before,
     color: #ed694a;
 }
 
+
 /*エンディング*/
 
 #ending {
     background-image: url(images/background.svg);
     background-size: cover;
     text-align: center;
-    height: 668px;
+    height: 801px;
 }
 
-.endimage {
-    width: 81%;
+.endimage {    
+    display: none;
 }
 
 .endtitle_sp{
-    display: none;
+    width: 85%;
+    position: relative;
+    top: -460px;
 }
 
 .endimage_sp{
-    display: none;
+    position: relative;
+    top: 300px;
 }
 
 .end_tips {
     text-align: left;
     background-color: #E5E3DC;
     display: inline-block;
-    padding: 40px;
+    padding: 30px;
     border: solid 4px #3D3B39;
     border-radius: 30px;
     position: relative;
-    top: -250px;
-    left: -200px;
+    top: -430px;
+    left: 0px;
 }
 
 .end_tips p {
     color: #3D3B39;
-    font-size: 20px;
-    line-height: 13px;
+    font-size: 10px;
+    line-height: 4px;
     letter-spacing: 2px;
     font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
     font-style: normal;
@@ -525,5 +488,6 @@ footer p {
     font-size: 15px;
     letter-spacing: 1px;
     padding: 8px;
-    padding-top: 15px;    
+    padding-top: 10px;
 }
+
