@@ -18,8 +18,22 @@ body {
     background-attachment: fixed;
     text-align: center;
     z-index: -1;
-    height: 109%;
+    height: 109vh;
 }
+
+#yellowbox{
+    width: 94%;
+    height: 95%;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border: solid 6px #fcfc17;
+    border-radius: 50px;
+    box-sizing: border-box;
+    z-index: 2;
+    pointer-events: none;    
+}
+
 
 .title_sp{
     width: 30%;
@@ -83,7 +97,7 @@ span{
 .button{
     width: 100%;
     position: absolute;
-    left: 0%;
+    left: 15%;
     display: block;
 }
 
@@ -132,19 +146,23 @@ span{
     transform: translateY(100px);
 }
 
-/*3.左右の動きを指定*/
+/*横スクロールバーを隠す*/
 .sect02 {
     overflow: hidden;
 }
 
-/*横スクロールバーを隠す*/
+/*3.左右の動きを指定*/
+/*
 .slide-right {
     transform: translateX(200px);
 }
+*/
 
+/*
 .slide-left {
     transform: translateX(-200px);
 }
+*/
 
 /*ポップアップ*/
 
@@ -167,10 +185,11 @@ span{
     font-size: 20px;
     background: rgba(56, 185, 198, .75);
     border: 2px solid #e5e3dc;
-    padding: 20px 50px;
+    padding: 10px 30px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    overflow-x: hidden;
 }
 
 #popup .upblock_orange {
@@ -183,7 +202,7 @@ span{
     font-size: 20px;
     background: rgba(237, 105, 74, .75);
     border: 2px solid #e5e3dc;
-    padding: 20px 50px;
+    padding: 10px 30px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -194,7 +213,7 @@ span{
 }
 
 #popup .explanation {
-    font-size: 5%;
+    font-size: 10px;
 }
 
 
@@ -290,7 +309,7 @@ span{
     width: 80%;
     position: relative;
     top: 620px;
-    left: 40px;
+    left: 37px;
     cursor: pointer;
 }
 
@@ -314,7 +333,7 @@ span{
     width: 80%;
     position: relative;
     top: 860px;
-    left: 40px;
+    left: 37px;
     cursor: pointer;
 }
 
@@ -435,7 +454,7 @@ slick setting .slick-prev:before,
     background-image: url(images/background.svg);
     background-size: cover;
     text-align: center;
-    height: 801px;
+    height: 820px;
 }
 
 .endimage {    
@@ -450,14 +469,14 @@ slick setting .slick-prev:before,
 
 .endimage_sp{
     position: relative;
-    top: 300px;
+    top: 318px;
 }
 
 .end_tips {
     text-align: left;
     background-color: #E5E3DC;
     display: inline-block;
-    padding: 30px;
+    padding: 20px;
     border: solid 4px #3D3B39;
     border-radius: 30px;
     position: relative;
@@ -488,6 +507,6 @@ footer p {
     font-size: 15px;
     letter-spacing: 1px;
     padding: 8px;
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
