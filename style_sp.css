@@ -22,11 +22,11 @@ body {
 }
 
 #yellowbox{
-    width: 94%;
+    width: 90%;
     height: 95%;
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 13px;
     border: solid 6px #fcfc17;
     border-radius: 50px;
     box-sizing: border-box;
