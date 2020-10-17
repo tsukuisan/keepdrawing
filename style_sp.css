@@ -109,6 +109,21 @@ span{
     height: 5550px;
 }
 
+.introduction{
+    display: none;
+}
+
+.introduction_sp{
+    text-align: center;
+    color: #fcfc17;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 100px;
+    outline: none;
+}
+
 /*フェードイン*/
 
 .scrollanime {
@@ -411,7 +426,7 @@ span{
 
 .dai_arrow_sp{
     position: relative;
-    top: 1000px;
+    top: 920px;
     left: 50px;
 }
 
@@ -441,7 +456,8 @@ span{
 }
 
 .slider img {
-    width: 95%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 slick setting .slick-prev:before,

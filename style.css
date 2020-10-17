@@ -50,7 +50,7 @@ html,body {
 }
 
 .topimage {
-    width: 80%;
+    width: 90%;
 }
 
 .topimage_sp{
@@ -129,6 +129,21 @@ span{
     height: 4200px;
 }
 
+.introduction{
+    text-align: center;
+    color: #fcfc17;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 100px;
+    outline: none;
+}
+
+.introduction_sp{
+    display: none;
+}
+
 /*フェードイン*/
 
 .scrollanime {
@@ -173,11 +188,11 @@ span{
 
 /*3.左右の動きを指定*/
 .slide-right {
-    transform: translateX(200px);
+    transform: translateX(150px);
 }
 
 .slide-left {
-    transform: translateX(-200px);
+    transform: translateX(-150px);
 }
 
 
@@ -442,7 +457,7 @@ span{
 #slider {
     background-color: #ED694A;
     text-align: center;
-    height: 750px;
+    height: 840px;
 }
 
 #slider p {
@@ -453,6 +468,8 @@ span{
     font-size: 50px;
     letter-spacing: 10px;
     padding: 50px;
+    padding-bottom: 100px;
+    outline: none;
 }
 
 .slider {
